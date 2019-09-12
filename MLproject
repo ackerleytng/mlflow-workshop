@@ -7,5 +7,5 @@ entry_points:
     parameters:
       alpha: float
       l1_ratio: {type: float, default: 0.1}
-      random_state: int
+      random_state: {type: int, default: 17}
     command: "python train.py {alpha} {l1_ratio}"
